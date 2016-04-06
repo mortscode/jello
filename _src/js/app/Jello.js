@@ -4,7 +4,7 @@ export default class Jello {
   constructor(options = {}) {
     this.defaults = {};
     this.options = options;
-    this.canvasHolder = document.getElementById('container');
+    this.canvasHolder = document.getElementById('jello-container');
     this.imgWidth = 1920;
     this.imgHeight = 960;
     this.imgRatio = this.imgHeight / this.imgWidth;
@@ -71,7 +71,7 @@ export default class Jello {
     this.animateFilters();
     this.eventListener();
 
-    this.renderer.view.setAttribute('class', 'canvas');
+    this.renderer.view.setAttribute('class', 'jello-canvas');
     this.canvasHolder.appendChild(this.renderer.view);
   }
 
@@ -185,9 +185,9 @@ export default class Jello {
 
   // click events
   eventListener() {
-    var changeImageBtn = document.getElementsByClassName('js-change-image')[0];
-    var changeDistortionBtn = document.getElementsByClassName('js-change-distortion')[0];
-    var toggleDistorionBtn = document.getElementsByClassName('js-toggle-distortion')[0];
+    const changeImageBtn = document.getElementsByClassName('js-change-image')[0];
+    const changeDistortionBtn = document.getElementsByClassName('js-change-distortion')[0];
+    const toggleDistorionBtn = document.getElementsByClassName('js-toggle-distortion')[0];
 
     changeImageBtn.onclick = () => {
       this.changeImage();
