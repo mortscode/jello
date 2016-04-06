@@ -1,0 +1,47 @@
+.jello-controls {
+
+  &__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 10%;
+    border-top: 1px solid $hue-white;
+  }
+
+  &__cta {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: (1 / 3) * 100%;
+    padding: 0;
+    margin: 0;
+
+    &--button {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba($hue-white, 0);
+      transition: background $ease-fast;
+
+      &:hover {
+        background: rgba($hue-white, 0.3);
+      }
+    }
+
+    &--text {
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: $hue-white;
+      font-size: 16px;
+      font-family: $sans;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+}

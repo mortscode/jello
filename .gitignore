@@ -1,0 +1,8 @@
+.sass-cache
+node_modules
+.eslintrc
+.scss-lint.yml
+assets/scripts/app.js
+assets/scripts/app.js.map
+assets/styles/main.css
+assets/styles/main.css.map

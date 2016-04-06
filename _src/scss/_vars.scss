@@ -1,0 +1,17 @@
+// easing
+$ease-fast: 250ms ease-in-out;
+$ease-med: 500ms ease-in-out;
+$ease-slow: 1000ms ease-in-out;
+$ease-xslow: 1500ms ease-out;
+
+// spacing
+$spacing: 5vh;
+$spacing-sm: $spacing / 2;
+$spacing-lg: $spacing * 2;
+$spacing-xl: $spacing * 3;
+
+// colors
+$hue-white: #fff;
+
+// fonts
+$sans: sans-serif;
