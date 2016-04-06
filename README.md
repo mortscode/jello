@@ -1,6 +1,5 @@
 #Jello.js
 ===========================
-Frontend development template for tedxportland2015.squarespace.com.
 
 ## Requirements
 * [npm](https://www.npmjs.com/)
